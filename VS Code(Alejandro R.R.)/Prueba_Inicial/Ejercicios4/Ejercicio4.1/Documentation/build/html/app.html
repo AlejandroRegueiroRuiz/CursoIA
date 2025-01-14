@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>app &#8212; Trabajadores 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=2bf1fcf8" />
+    
+    <script src="_static/documentation_options.js?v=2709fde1"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Classes" href="classes.html" />
+    <link rel="prev" title="Trabajadores documentation" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="classes.html" title="Classes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Trabajadores documentation"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Trabajadores 0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">app</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-main">
+<span id="app"></span><h1>app<a class="headerlink" href="#module-main" title="Link to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="main.anadirPersonas_a_Cargo">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">añadirPersonas_a_Cargo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listaEnf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nif</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.anadirPersonas_a_Cargo" title="Link to this definition">¶</a></dt>
+<dd><p>Añade personas al número de personas a cargo de una enfermera.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>listaEnf (list): Lista de enfermeras.
+nif (str): El NIF de la enfermera.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.anadirTrabajador">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">añadirTrabajador</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listaMed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listaEnf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.anadirTrabajador" title="Link to this definition">¶</a></dt>
+<dd><p>Permite al usuario añadir un nuevo trabajador (médico o enfermera) a las listas correspondientes.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>listaMed (list): Lista de médicos en el hospital.
+listaEnf (list): Lista de enfermeras en el hospital.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.borrarTrabajador">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">borrarTrabajador</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listaMed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listaEnf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nif</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.borrarTrabajador" title="Link to this definition">¶</a></dt>
+<dd><p>Elimina un trabajador (médico o enfermera) de las listas según el NIF proporcionado.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>listaMed (list): Lista de médicos.
+listaEnf (list): Lista de enfermeras.
+nif (str): El NIF del trabajador a eliminar.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.cargarDatosCSV">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">cargarDatosCSV</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listaMed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listaEnf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.cargarDatosCSV" title="Link to this definition">¶</a></dt>
+<dd><p>Carga los datos de médicos y enfermeras desde archivos CSV.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>listaMed (list): Lista de médicos.
+listaEnf (list): Lista de enfermeras.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.guardarDatosCSV">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">guardarDatosCSV</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listaMed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listaEnf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.guardarDatosCSV" title="Link to this definition">¶</a></dt>
+<dd><p>Guarda los datos de los médicos y enfermeras en archivos CSV.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>listaMed (list): Lista de médicos.
+listaEnf (list): Lista de enfermeras.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.menu">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">menu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.menu" title="Link to this definition">¶</a></dt>
+<dd><p>Muestra un menú interactivo para gestionar la lista de trabajadores (médicos y enfermeras) del hospital.
+Permite realizar diversas operaciones como añadir, borrar, mostrar y cargar/trabajar con datos de trabajadores.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.mostrarDetallesTrabajador">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">mostrarDetallesTrabajador</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listaMed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listaEnf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nif</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.mostrarDetallesTrabajador" title="Link to this definition">¶</a></dt>
+<dd><p>Muestra los detalles de un trabajador específico según su NIF.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>listaMed (list): Lista de médicos.
+listaEnf (list): Lista de enfermeras.
+nif (str): El NIF del trabajador.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.mostrarExperienciaMedico">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">mostrarExperienciaMedico</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listaMed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nif</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.mostrarExperienciaMedico" title="Link to this definition">¶</a></dt>
+<dd><p>Muestra los años de experiencia de un médico calculados desde su fecha de inicio.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>listaMed (list): Lista de médicos.
+nif (str): El NIF del médico.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.mostrarPersonas_a_Cargo">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">mostrarPersonas_a_Cargo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listaEnf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nif</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.mostrarPersonas_a_Cargo" title="Link to this definition">¶</a></dt>
+<dd><p>Muestra el número de personas a cargo de una enfermera.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>listaEnf (list): Lista de enfermeras.
+nif (str): El NIF de la enfermera.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.mostrarTrabajadores">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">mostrarTrabajadores</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listaMed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listaEnf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.mostrarTrabajadores" title="Link to this definition">¶</a></dt>
+<dd><p>Muestra la información de todos los trabajadores del hospital, médicos y enfermeras.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>listaMed (list): Lista de médicos.
+listaEnf (list): Lista de enfermeras.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.quitarPersonas_a_Cargo">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">quitarPersonas_a_Cargo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listaEnf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nif</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.quitarPersonas_a_Cargo" title="Link to this definition">¶</a></dt>
+<dd><p>Reduce el número de personas a cargo de una enfermera.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>listaEnf (list): Lista de enfermeras.
+nif (str): El NIF de la enfermera.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.validar_fecha">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">validar_fecha</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fecha_str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.validar_fecha" title="Link to this definition">¶</a></dt>
+<dd><p>Valida si la cadena de texto proporcionada es una fecha válida en formato ‘YYYY-MM-DD’.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>fecha_str (str): La fecha a validar.</p>
+</dd>
+<dt>Returns:</dt><dd><p>bool: True si la fecha es válida, False si no lo es.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class" id="module-trabajador">
+<dt class="sig sig-object py" id="trabajador.Enfermera">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">trabajador.</span></span><span class="sig-name descname"><span class="pre">Enfermera</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nif</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nombre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fecha_nacimiento</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sexo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_colegiado</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">area_trabajo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_personas_a_cargo</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trabajador.Enfermera" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="classes.html#module-trabajador.Trabajador" title="trabajador.Trabajador"><code class="xref py py-class docutils literal notranslate"><span class="pre">Trabajador</span></code></a></p>
+<p>Clase para representar a una enfermera, que es una especialización de Trabajador.
+Añade atributos específicos como el área de trabajo y el número de personas a cargo.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="trabajador.Enfermera.devolverDatos">
+<span class="sig-name descname"><span class="pre">devolverDatos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trabajador.Enfermera.devolverDatos" title="Link to this definition">¶</a></dt>
+<dd><p>Devuelve los datos de la enfermera en forma de lista.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>list: Lista con los datos de la enfermera (NIF, nombre, fecha de nacimiento, sexo, número de colegiado, área de trabajo, número de personas a cargo).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trabajador.Enfermera.devolverPersonas_a_Cargo">
+<span class="sig-name descname"><span class="pre">devolverPersonas_a_Cargo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trabajador.Enfermera.devolverPersonas_a_Cargo" title="Link to this definition">¶</a></dt>
+<dd><p>Devuelve el número de personas a cargo de la enfermera.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>int: Número de personas a cargo de la enfermera.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trabajador.Enfermera.mostrarDatos">
+<span class="sig-name descname"><span class="pre">mostrarDatos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trabajador.Enfermera.mostrarDatos" title="Link to this definition">¶</a></dt>
+<dd><p>Muestra los datos de la enfermera en formato de texto.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>str: Información completa sobre la enfermera, como nombre, NIF, fecha de nacimiento, sexo, número de colegiado, área de trabajo y número de personas a cargo.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="trabajador.Medico">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">trabajador.</span></span><span class="sig-name descname"><span class="pre">Medico</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nif</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nombre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fecha_nacimiento</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sexo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_colegiado</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">especialidad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fecha_inicio</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trabajador.Medico" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="classes.html#module-trabajador.Trabajador" title="trabajador.Trabajador"><code class="xref py py-class docutils literal notranslate"><span class="pre">Trabajador</span></code></a></p>
+<p>Clase para representar a un médico, que es una especialización de Trabajador.
+Añade atributos específicos como la especialidad y la fecha de inicio de ejercicio.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="trabajador.Medico.devolverDatos">
+<span class="sig-name descname"><span class="pre">devolverDatos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trabajador.Medico.devolverDatos" title="Link to this definition">¶</a></dt>
+<dd><p>Devuelve los datos del médico en forma de lista.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>list: Lista con los datos del médico (NIF, nombre, fecha de nacimiento, sexo, número de colegiado, especialidad, fecha de inicio).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trabajador.Medico.devolverFechaInicio">
+<span class="sig-name descname"><span class="pre">devolverFechaInicio</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trabajador.Medico.devolverFechaInicio" title="Link to this definition">¶</a></dt>
+<dd><p>Devuelve la fecha de inicio del médico en formato de cadena ‘YYYY-MM-DD’.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>str: Fecha de inicio del médico.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trabajador.Medico.mostrarDatos">
+<span class="sig-name descname"><span class="pre">mostrarDatos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trabajador.Medico.mostrarDatos" title="Link to this definition">¶</a></dt>
+<dd><p>Muestra los datos del médico en formato de texto.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>str: Información completa sobre el médico, como nombre, NIF, fecha de nacimiento, sexo, número de colegiado, especialidad y fecha de inicio.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="trabajador.Trabajador">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">trabajador.</span></span><span class="sig-name descname"><span class="pre">Trabajador</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nif</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nombre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fechaNac</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sexo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_Col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trabajador.Trabajador" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>Clase base para representar a un trabajador en general.
+Define atributos comunes como el NIF, nombre, fecha de nacimiento, sexo y número de colegiado.</p>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">app</a><ul>
+<li><a class="reference internal" href="#main.anadirPersonas_a_Cargo"><code class="docutils literal notranslate"><span class="pre">añadirPersonas_a_Cargo()</span></code></a></li>
+<li><a class="reference internal" href="#main.anadirTrabajador"><code class="docutils literal notranslate"><span class="pre">añadirTrabajador()</span></code></a></li>
+<li><a class="reference internal" href="#main.borrarTrabajador"><code class="docutils literal notranslate"><span class="pre">borrarTrabajador()</span></code></a></li>
+<li><a class="reference internal" href="#main.cargarDatosCSV"><code class="docutils literal notranslate"><span class="pre">cargarDatosCSV()</span></code></a></li>
+<li><a class="reference internal" href="#main.guardarDatosCSV"><code class="docutils literal notranslate"><span class="pre">guardarDatosCSV()</span></code></a></li>
+<li><a class="reference internal" href="#main.menu"><code class="docutils literal notranslate"><span class="pre">menu()</span></code></a></li>
+<li><a class="reference internal" href="#main.mostrarDetallesTrabajador"><code class="docutils literal notranslate"><span class="pre">mostrarDetallesTrabajador()</span></code></a></li>
+<li><a class="reference internal" href="#main.mostrarExperienciaMedico"><code class="docutils literal notranslate"><span class="pre">mostrarExperienciaMedico()</span></code></a></li>
+<li><a class="reference internal" href="#main.mostrarPersonas_a_Cargo"><code class="docutils literal notranslate"><span class="pre">mostrarPersonas_a_Cargo()</span></code></a></li>
+<li><a class="reference internal" href="#main.mostrarTrabajadores"><code class="docutils literal notranslate"><span class="pre">mostrarTrabajadores()</span></code></a></li>
+<li><a class="reference internal" href="#main.quitarPersonas_a_Cargo"><code class="docutils literal notranslate"><span class="pre">quitarPersonas_a_Cargo()</span></code></a></li>
+<li><a class="reference internal" href="#main.validar_fecha"><code class="docutils literal notranslate"><span class="pre">validar_fecha()</span></code></a></li>
+<li><a class="reference internal" href="#trabajador.Enfermera"><code class="docutils literal notranslate"><span class="pre">Enfermera</span></code></a><ul>
+<li><a class="reference internal" href="#trabajador.Enfermera.devolverDatos"><code class="docutils literal notranslate"><span class="pre">Enfermera.devolverDatos()</span></code></a></li>
+<li><a class="reference internal" href="#trabajador.Enfermera.devolverPersonas_a_Cargo"><code class="docutils literal notranslate"><span class="pre">Enfermera.devolverPersonas_a_Cargo()</span></code></a></li>
+<li><a class="reference internal" href="#trabajador.Enfermera.mostrarDatos"><code class="docutils literal notranslate"><span class="pre">Enfermera.mostrarDatos()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#trabajador.Medico"><code class="docutils literal notranslate"><span class="pre">Medico</span></code></a><ul>
+<li><a class="reference internal" href="#trabajador.Medico.devolverDatos"><code class="docutils literal notranslate"><span class="pre">Medico.devolverDatos()</span></code></a></li>
+<li><a class="reference internal" href="#trabajador.Medico.devolverFechaInicio"><code class="docutils literal notranslate"><span class="pre">Medico.devolverFechaInicio()</span></code></a></li>
+<li><a class="reference internal" href="#trabajador.Medico.mostrarDatos"><code class="docutils literal notranslate"><span class="pre">Medico.mostrarDatos()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#trabajador.Trabajador"><code class="docutils literal notranslate"><span class="pre">Trabajador</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="index.html"
+                          title="previous chapter">Trabajadores documentation</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="classes.html"
+                          title="next chapter">Classes</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/app.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="classes.html" title="Classes"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Trabajadores documentation"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Trabajadores 0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">app</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Alejandro Regueiro Ruiz.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+  </body>
+</html>

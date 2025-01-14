@@ -1,0 +1,15 @@
+Comandos MariaDB:
+    sudo mariadb -h(ip del servidor de mariadb) -u(usuario) -p'(contraseña)'< world-db/world.sql(Esto añade la base de datos de world como ejemplo hecho en el ejercicio)
+    sudo mariadb -h(ip del servidor de mariadb) -u(usuario) -p'(contraseña)'  --(Con esto accedemos dentro del docker con el usuario deseado)
+
+
+Apuntes Hadoop:
+    Nuestro home en hadoop es /user/usuario(en mi caso /user/xuedua095)
+
+Comandos Hadoop:
+    hdfs dfs -ls(listar elementos dentro del dfs)
+    hdfs dfs -put(Introducir archivo o directorio al dfs)
+    hdfs dfs -get(descarga del hdfs el archivo o directorio a nuestro home)
+    hdfs dfs -mv(mueve los elementos que estan en el hdfs de una ruta origen del dfs a una ruta destino del dfs)
+    hdfs dfs -cp(copia archivos o directorios de ruta origen a ruta destino)
+    hdfs dfs -rm(borrar archivos o directorios)
