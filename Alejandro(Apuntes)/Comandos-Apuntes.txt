@@ -2,6 +2,7 @@ Comandos MariaDB:
     sudo mariadb -h(ip del servidor de mariadb) -u(usuario) -p'(contraseña)'< world-db/world.sql(Esto añade la base de datos de world como ejemplo hecho en el ejercicio)
     sudo mariadb -h(ip del servidor de mariadb) -u(usuario) -p'(contraseña)'  --(Con esto accedemos dentro del docker con el usuario deseado)
 
+pasw mariadb = iR*-`ySoKm8bq"g[W;mb`:w-rW3DR%$V
 
 Apuntes Hadoop:
     Nuestro home en hadoop es /user/usuario(en mi caso /user/xuedua095)
