@@ -14,3 +14,27 @@ Comandos Hadoop:
     hdfs dfs -mv(mueve los elementos que estan en el hdfs de una ruta origen del dfs a una ruta destino del dfs)
     hdfs dfs -cp(copia archivos o directorios de ruta origen a ruta destino)
     hdfs dfs -rm(borrar archivos o directorios)
+
+    Hadoop-Sqoop:
+        sqoop list-tables --username root -P --connect jdbc:mysql://10.133.29.112:9906/world
+
+        sqoop import --username root --password ' iR*-`ySoKm8bq"g[W;mb`:w-rW3DR%$V' --connect jdbc:mysql://10.133.29.112:9906/world --table mytable --target-dir /user/username/mytable --num-mappers 1
+
+        sqoop export --username postgres --password 1234 --connect jdbc:postgresql://10.133.29.112:5432/world --table city --export-dir /user/xuedua095/world/city --input-fields-terminated-by '\001' --num-mappers 1
+
+
+
+
+sqoop export --connect jdbc:postgresql://10.133.29.71:5432/world --username postgres --password 1234 --table country --export-dir /user/xuedua095/world/country/part-m-000000 --num-mappers 1
+
+# Comando checksum
+md5sum arquivo.csv
+
+# Comando para contar o número de liñas dun arquivo CSV
+wc -l /ruta/ao/arquivo.csv
+
+# Comando para contar o número de rexistros nunha táboa exportada en PostgreSQL
+psql -h 10.133.29.71 -U postgres -d world -c "SELECT COUNT(*) FROM country;"
+
+# Comando para contar el número de registros en una tabla exportada en MariaDB
+mariadb -h 10.133.29.112 -u root -p -e "SELECT COUNT(*) FROM world.city;"
