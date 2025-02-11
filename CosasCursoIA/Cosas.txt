@@ -1,0 +1,25 @@
+Investigar formato AVRO:
+0) ¿Qué es?
+    Avro es un proyecto de código abierto que proporciona servicios de serialización e
+    intercambio de datos para Apache Hadoop. Estos servicios se pueden emplear juntos o de forma independiente.
+
+1) ¿Es binario?
+    Si. Los archivos con formato avro están basados en un framework de serialización de datos en un formato binario compacto.
+
+2) ¿Está comprimido?
+    Por defecto, estos archivos no están comprimidos, pero se pueden comprimir.
+
+3) ¿Tiene verificación de integridad?
+    Si, los archivos consisten en cabeceras con multiples bloques de datos, la cabecera contiene metadata y un número que identifica el archivo como avro
+
+4) En un canal de comunicación abierto ¿Puede cambiar para recivir otro tipa de dato?
+    Si, tienen soporte para permitir a los datos cambiar durante los procesos, pudiendo introducir nuevos tipos de datos haciendolo más flexible.
+
+5) Define Serializar datos
+    Es el proceso mediante el que convertimos un objeto para poder transportarlo y o almacenarlo.
+
+6) Fomarto hash sha-256 de un archivo
+    Nombre: Sqoop-Hadoop.7z
+    Tamaño: 789863 bytes : 771 KiB
+    SHA256: 470be55dc88384d47ac2d96986ab45e4db2c7a5ee2be3b30876ba6c1d32fd1f0
+

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../CosasFueraRepo"
+		},
+		{
+			"path": "../SBD"
+		},
+		{
+			"path": "../repos_Grupos"
+		}
+	],
+	"settings": {
+		"notebook.stickyScroll.enabled": false
+	}
+}

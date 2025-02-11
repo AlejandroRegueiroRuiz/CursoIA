@@ -38,3 +38,15 @@ psql -h 10.133.29.71 -U postgres -d world -c "SELECT COUNT(*) FROM country;"
 
 # Comando para contar el número de registros en una tabla exportada en MariaDB
 mariadb -h 10.133.29.112 -u root -p -e "SELECT COUNT(*) FROM world.city;"
+
+
+
+Comandos Kafka:
+    -Lanzar docker
+        docker run --name kafkiano -p 9092:9092 -d apache/kafka:latest
+    -Crear un topic
+        docker exec -it kafkiano /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic quickstart
+    -Entrar en el topic como productor
+        docker exec -it kafkiano /opt/kafka/bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic quickstart
+    -Entrar en el topic como consumidor
+        docker exec -it kafkiano /opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic topicprimeiro --from-beginning(Si quieremos ver desde el inicio)
