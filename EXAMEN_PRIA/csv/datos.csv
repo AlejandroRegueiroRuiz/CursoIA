@@ -1,0 +1,17 @@
+Id,Origen,Destino,TiempoRuta
+0,A,B,10
+1,A,C,22
+2,B,C,13
+3,B,E,7
+4,C,D,6
+5,C,E,4
+6,D,A,12
+7,D,E,8
+8,D,F,22
+9,E,F,10
+10,E,G,15
+11,F,B,7
+12,F,G,12
+13,G,C,23
+14,G,H,17
+15,H,A,46

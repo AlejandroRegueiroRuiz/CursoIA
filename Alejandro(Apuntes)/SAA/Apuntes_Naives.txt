@@ -1,0 +1,37 @@
+El Naive Bayes es un algoritmo de clasificación basado en el teorema de Bayes, que hace la suposición de 
+que las características son independientes entre sí (de ahí el término "naive" o ingenuo). Hay diferentes 
+tipos de clasificadores Naive Bayes, y la diferencia entre ellos radica en cómo modelan la distribución de 
+las características (atributos) de los datos. Vamos a ver las tres variantes más comunes: Gaussiana, Multinomial y Bernoulli.
+
+
+1. Naive Bayes Gaussiana
+
+    Modelo: Supone que las características son continuas y que siguen una distribución normal (gaussiana).
+
+    Características: La distribución de cada característica se modela como una distribución normal, con su respectiva media y desviación estándar.
+
+    Casos de uso:
+        Se utiliza cuando las características son continuas y se espera que se distribuyan de forma aproximadamente normal.
+        Ejemplo: Clasificación de datos numéricos, como la predicción de precios de viviendas o clasificación de medidas biométricas.
+
+2. Naive Bayes Multinomial
+
+    Modelo: Es el más común en problemas de clasificación de texto. Este modelo asume que las características son recuentos o frecuencias de eventos (por ejemplo,
+     la frecuencia de palabras en un texto).
+
+    Características: Cada característica se representa como el número de veces que un evento ocurre (por ejemplo, cuántas veces aparece una palabra en un documento).
+
+    Casos de uso:
+        Se utiliza principalmente en clasificación de texto, como clasificación de correos electrónicos (spam/no spam) o clasificación de documentos.
+        Ejemplo: Análisis de sentimientos en reseñas, donde las palabras se cuentan y se usa el número de veces que una palabra aparece para clasificar el texto.
+
+3. Naive Bayes Bernoulli
+
+    Modelo: Asume que las características son variables binarias (es decir, solo pueden tener valores 0 o 1), como si un evento ocurre o no.
+
+    Características: Cada característica toma el valor 1 si el evento ocurre y 0 si no ocurre.
+
+    Casos de uso:
+        Es útil cuando las características representan la presencia o ausencia de un evento.
+        Ejemplo: Clasificación de texto donde cada palabra es tratada como una característica binaria (por ejemplo, si 
+        una palabra está presente o no en un documento). Se usa en tareas como clasificación de spam, donde solo importa si una palabra aparece o no en un mensaje.

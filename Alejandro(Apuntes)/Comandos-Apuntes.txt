@@ -1,3 +1,6 @@
+Cosas MongoDB:
+    Contraseña: cltJpmHnsWn52WwA
+
 Comandos MariaDB:
     sudo mariadb -h(ip del servidor de mariadb) -u(usuario) -p'(contraseña)'< world-db/world.sql(Esto añade la base de datos de world como ejemplo hecho en el ejercicio)
     sudo mariadb -h(ip del servidor de mariadb) -u(usuario) -p'(contraseña)'  --(Con esto accedemos dentro del docker con el usuario deseado)
@@ -50,3 +53,10 @@ Comandos Kafka:
         docker exec -it kafkiano /opt/kafka/bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic quickstart
     -Entrar en el topic como consumidor
         docker exec -it kafkiano /opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic topicprimeiro --from-beginning(Si quieremos ver desde el inicio)
+
+
+
+        sqoop import-all-tables --connect jdbc:mysql://10.133.28.76:9906/Centros --username root --password 'iR*-`ySoKm8bq"g[W;mb`:w-rW3DR%$V' --warehouse-dir /user/xuedua095/Centros/ProvJuntas --num-mappers 1
+
+
+        sqoop import-all-tables --connect jdbc:mysql://10.133.29.71:9906/employees --username root --password 'iR*-`ySoKm8bq"g[W;mb`:w-rW3DR%$V' --warehouse-dir /user/xuedua095/employees --num-mapper
