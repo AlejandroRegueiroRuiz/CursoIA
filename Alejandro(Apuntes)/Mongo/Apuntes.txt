@@ -1,0 +1,11 @@
+Crear usuario en mongo:
+
+    db.createUser({user: "profesor123",
+    pwd: passwordPrompt(),  // ou "o contrasinal en claro"
+    roles: [
+      { role: "readWrite", db: "persoal" },
+      { role: "dbAdmin", db: "persoal"},
+      { role: "readWrite", db: "biblioteca"}
+]})
+
+-

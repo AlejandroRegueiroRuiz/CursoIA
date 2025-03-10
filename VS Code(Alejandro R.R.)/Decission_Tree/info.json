@@ -1,0 +1,44 @@
+{
+    "pregunta": "¿El árbol tiene hojas perennes?",
+    "respuestas": {
+      "si": {
+        "pregunta": "¿Las hojas son agujas o escamas?",
+        "respuestas": {
+          "si": {
+            "pregunta": "¿El árbol es alto y con una corteza áspera?",
+            "respuestas": {
+              "si": "Pino",
+              "no": "Abeto"
+            }
+          },
+          "no": {
+            "pregunta": "¿El árbol tiene frutos grandes y comestibles?",
+            "respuestas": {
+              "si": "Cítrico",
+              "no": "Tejo"
+            }
+          }
+        }
+      },
+      "no": {
+        "pregunta": "¿Las hojas se caen en invierno?",
+        "respuestas": {
+          "si": {
+            "pregunta": "¿El árbol tiene flores grandes y vistosas?",
+            "respuestas": {
+              "si": "Cerezo",
+              "no": "Roble"
+            }
+          },
+          "no": {
+            "pregunta": "¿El árbol tiene una corteza lisa y colorida?",
+            "respuestas": {
+              "si": "Arce",
+              "no": "Fresno"
+            }
+          }
+        }
+      }
+    }
+  }
+  
