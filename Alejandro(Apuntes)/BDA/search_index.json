@@ -1,0 +1,10 @@
+{
+    "name": "sample_supplies-sales-dynamic",
+    "searchAnalyzer": "lucene.standard",
+    "analyzer": "lucene.standard",
+    "collectionName": "sales",
+    "database": "sample_supplies",
+    "mappings": {
+        "dynamic": true
+    }
+}
