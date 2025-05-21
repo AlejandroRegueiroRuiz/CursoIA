@@ -1,0 +1,455 @@
+[
+    {
+      "instruction": "¿Cuál es la temperatura ideal para cultivar orquídeas tropicales en un invernadero?",
+      "response": "La temperatura ideal para cultivar orquídeas tropicales está entre 18 y 30 °C. Es importante que durante la noche no baje de los 15 °C para evitar estrés en la planta."
+    },
+    {
+      "instruction": "¿Cómo debe ser la humedad en un invernadero para orquídeas?",
+      "response": "La humedad relativa ideal está entre el 60% y 80%. En ambientes secos, se recomienda usar humidificadores o bandejas con agua."
+    },
+    {
+      "instruction": "¿Qué tipo de sustrato necesitan las orquídeas epífitas?",
+      "response": "Las orquídeas epífitas necesitan un sustrato aireado como corteza de pino, carbón vegetal y musgo sphagnum. Debe drenar muy bien para evitar pudrición."
+    },
+    {
+      "instruction": "¿Con qué frecuencia se deben regar las orquídeas?",
+      "response": "Generalmente una vez por semana en invierno y dos veces en verano. Es importante dejar secar parcialmente el sustrato entre riegos."
+    },
+    {
+      "instruction": "¿Qué fertilizante es recomendable para orquídeas tropicales?",
+      "response": "Se recomienda un fertilizante equilibrado como 20-20-20, diluido a la mitad de la dosis, aplicado cada 15 días durante el crecimiento activo."
+    },
+    {
+      "instruction": "¿Cómo se identifican las raíces sanas de una orquídea?",
+      "response": "Las raíces sanas son blancas con puntas verdes. Si están marrones, blandas o con mal olor, es señal de pudrición."
+    },
+    {
+      "instruction": "¿Qué tipo de luz necesitan las orquídeas en un invernadero?",
+      "response": "Requieren luz brillante pero indirecta. Lo ideal es usar mallas de sombreo que reduzcan la luz directa en un 50-70%."
+    },
+    {
+      "instruction": "¿Se pueden usar luces artificiales para orquídeas?",
+      "response": "Sí, se pueden usar luces LED de espectro completo durante el invierno o en invernaderos con poca luz natural."
+    },
+    {
+      "instruction": "¿Cuáles son las plagas más comunes en orquídeas?",
+      "response": "Cochinillas, ácaros, pulgones y babosas. Se recomienda inspección regular y uso de insecticidas específicos o control biológico."
+    },
+    {
+      "instruction": "¿Qué enfermedades fúngicas afectan a las orquídeas?",
+      "response": "Las más comunes son podredumbre negra, roya y botrytis. Se previenen mejorando la ventilación y evitando el exceso de humedad."
+    },
+    {
+      "instruction": "¿Cómo se realiza la polinización manual de orquídeas?",
+      "response": "Se usa un palillo para transferir el polen del polinario a la cavidad estigmática de otra flor. Debe hacerse con cuidado para no dañar la flor."
+    },
+    {
+      "instruction": "¿Qué orquídeas son ideales para principiantes?",
+      "response": "La Phalaenopsis, Dendrobium y Oncidium son ideales por su resistencia y facilidad de cultivo."
+    },
+    {
+      "instruction": "¿Cómo se trasplanta una orquídea correctamente?",
+      "response": "Debe hacerse cada 1-2 años. Se retira el sustrato viejo, se podan raíces muertas y se coloca en una maceta con sustrato nuevo."
+    },
+    {
+      "instruction": "¿Qué tamaño de maceta es mejor para orquídeas?",
+      "response": "Una maceta pequeña que contenga bien las raíces, pero permita cierto espacio para el crecimiento. El exceso de espacio puede retener agua y causar pudrición."
+    },
+    {
+      "instruction": "¿Qué es la pseudobulbo en las orquídeas?",
+      "response": "Es una estructura de almacenamiento de agua y nutrientes. Muchas orquídeas como las Cattleya lo desarrollan como adaptación a ambientes secos."
+    },
+    {
+      "instruction": "¿Cómo se estimula la floración de una orquídea?",
+      "response": "Reduciendo ligeramente la temperatura nocturna, aplicando fertilizante con fósforo y asegurando buena luz."
+    },
+    {
+      "instruction": "¿Por qué no florece mi orquídea?",
+      "response": "Puede deberse a falta de luz, exceso de nitrógeno, ausencia de reposo o condiciones inadecuadas de temperatura y humedad."
+    },
+    {
+      "instruction": "¿Cuándo se debe podar una orquídea?",
+      "response": "Después de la floración. Se cortan las varas florales marchitas y raíces secas. Nunca se podan hojas sanas innecesariamente."
+    },
+    {
+      "instruction": "¿Las orquídeas necesitan reposo?",
+      "response": "Sí, muchas especies como Dendrobium requieren un período seco y fresco en otoño para estimular la floración."
+    },
+    {
+      "instruction": "¿Qué tipo de agua es mejor para regar orquídeas?",
+      "response": "Agua de lluvia, destilada o filtrada. El agua del grifo puede tener sales que dañan las raíces."
+    },
+    {
+      "instruction": "¿Cómo prevenir hongos en el sustrato de las orquídeas?",
+      "response": "Evita el riego excesivo, proporciona buena ventilación y usa fungicidas preventivos naturales como canela en polvo."
+    },
+    {
+      "instruction": "¿Qué hacer si las hojas de la orquídea están arrugadas?",
+      "response": "Puede ser deshidratación o daño en las raíces. Revisa el estado radicular y ajusta el riego."
+    },
+    {
+      "instruction": "¿Cómo se propagan las orquídeas?",
+      "response": "Por división de pseudobulbos, keikis o cultivo in vitro. La división es el método más común entre aficionados."
+    },
+    {
+      "instruction": "¿Es normal que las raíces salgan de la maceta?",
+      "response": "Sí, las raíces aéreas son naturales en muchas especies epífitas y no deben cortarse si están sanas."
+    },
+    {
+      "instruction": "¿Qué señales indican que una orquídea está enferma?",
+      "response": "Hojas amarillas, manchas negras, raíces blandas o pérdida repentina de flores pueden ser señales de enfermedad."
+    },
+    {
+      "instruction": "¿Cuál es la duración típica de la floración?",
+      "response": "De 4 a 12 semanas, dependiendo de la especie y las condiciones ambientales."
+    },
+    {
+      "instruction": "¿Se pueden cultivar orquídeas sin invernadero?",
+      "response": "Sí, en climas tropicales o dentro de casa con buena luz, humedad y ventilación controlada."
+    },
+    {
+      "instruction": "¿Qué hacer si la orquídea pierde todas las flores?",
+      "response": "Es normal tras la floración. Continúa cuidándola y espera el siguiente ciclo."
+    },
+    {
+      "instruction": "¿Cuál es el mejor momento del día para regar?",
+      "response": "Por la mañana, para permitir que el exceso de humedad se evapore durante el día y evitar hongos."
+    },
+    {
+      "instruction": "¿Las orquídeas necesitan CO₂ suplementario?",
+      "response": "No en cultivo doméstico, pero en producción comercial puede usarse para acelerar el crecimiento."
+    },
+    {
+      "instruction": "¿Qué hacer si aparecen manchas negras en las hojas?",
+      "response": "Aislar la planta, cortar las partes afectadas y aplicar fungicida. Aumentar ventilación y reducir humedad."
+    },
+    {
+      "instruction": "¿Es necesario esterilizar herramientas al podar orquídeas?",
+      "response": "Sí, siempre. Usa alcohol o fuego para evitar propagar enfermedades entre plantas."
+    },
+    {
+      "instruction": "¿Cuál es la mejor orientación para un invernadero de orquídeas?",
+      "response": "Orientación este-oeste para maximizar la entrada de luz matutina y evitar el calor extremo de la tarde."
+    },
+    {
+      "instruction": "¿Las orquídeas pueden cultivarse montadas en troncos?",
+      "response": "Sí, especialmente las epífitas. Necesitan alta humedad y riego frecuente al estar sin sustrato."
+    },
+    {
+      "instruction": "¿Qué hacer con una orquídea que tiene hojas blandas?",
+      "response": "Es posible deshidratación o pudrición radicular. Inspecciona las raíces y ajusta el riego."
+    },
+    {
+      "instruction": "¿Cuántas horas de luz necesitan las orquídeas?",
+      "response": "Entre 12 y 14 horas de luz al día. En invierno puede necesitarse iluminación artificial."
+    },
+    {
+      "instruction": "¿Qué insectos beneficiosos pueden usarse como control biológico?",
+      "response": "Mariquitas, ácaros depredadores y crisopas ayudan a controlar plagas como pulgones y cochinillas."
+    },
+    {
+      "instruction": "¿Es necesario rotar las orquídeas dentro del invernadero?",
+      "response": "Sí, rotarlas periódicamente asegura que todas las partes reciban luz de forma uniforme."
+    },
+    {
+      "instruction": "¿Qué signos indican exceso de fertilización?",
+      "response": "Hojas quemadas, puntas marrones, crecimiento anormal o acumulación de sales en el sustrato."
+    },
+    {
+      "instruction": "¿Qué tamaño de flor tienen las orquídeas Cattleya?",
+      "response": "Las flores pueden alcanzar entre 10 y 20 cm de diámetro, siendo una de las más vistosas."
+    },
+    {
+      "instruction": "¿Cuál es la vida útil de una orquídea bien cuidada?",
+      "response": "Puede vivir varias décadas. Hay casos documentados de orquídeas que viven más de 50 años."
+    },
+    {
+      "instruction": "¿Cómo afecta la altitud al cultivo de orquídeas?",
+      "response": "Algunas especies prefieren altitudes medias-altas. La altitud influye en temperatura y humedad."
+    },
+    {
+      "instruction": "¿Qué diferencia hay entre orquídeas epífitas y terrestres?",
+      "response": "Las epífitas crecen sobre árboles y requieren aireación; las terrestres crecen en suelo y requieren sustrato más compacto."
+    },
+    {
+      "instruction": "¿Cuál es el mejor sustrato para orquídeas terrestres?",
+      "response": "Una mezcla de turba, perlita y corteza fina. Debe retener algo de humedad pero sin compactarse."
+    },
+    {
+      "instruction": "¿Cómo saber si una orquídea necesita trasplante?",
+      "response": "Cuando el sustrato se descompone, las raíces sobresalen en exceso o la planta se ve inestable en la maceta."
+    },
+    {
+      "instruction": "¿Las orquídeas pueden cultivarse en hidroponía?",
+      "response": "Sí, usando sistemas de cultivo semi-hidropónico con arcilla expandida y soluciones nutritivas."
+    },
+    {
+        "instruction": "¿Cuál es la temperatura mínima nocturna recomendada para orquídeas tropicales?",
+        "response": "La temperatura mínima nocturna debe ser de 15°C para evitar estrés en las plantas."
+      },
+      {
+        "instruction": "¿Qué tipo de sustrato es ideal para orquídeas epífitas?",
+        "response": "Un sustrato aireado como corteza de pino, carbón vegetal y musgo sphagnum es ideal."
+      },
+      {
+        "instruction": "¿Con qué frecuencia se debe regar una orquídea Vanda?",
+        "response": "Se debe regar moderadamente, permitiendo que el sustrato se seque ligeramente entre riegos."
+      },
+      {
+        "instruction": "¿Cómo se puede aumentar la humedad en un invernadero para orquídeas?",
+        "response": "Utilizando humidificadores, bandejas con agua o agrupando plantas para crear un microclima húmedo."
+      },
+      {
+        "instruction": "¿Qué tipo de luz necesitan las orquídeas en un invernadero?",
+        "response": "Requieren luz brillante pero indirecta; evitar la exposición directa al sol para prevenir quemaduras."
+      },
+      {
+        "instruction": "¿Cómo se realiza la polinización manual en orquídeas?",
+        "response": "Se transfiere el polen de una flor a otra utilizando un palillo o pincel, imitando la acción de los polinizadores naturales."
+      },
+      {
+        "instruction": "¿Qué plagas comunes afectan a las orquídeas en invernadero?",
+        "response": "Cochinillas, ácaros, pulgones y babosas son plagas comunes que requieren control adecuado."
+      },
+      {
+        "instruction": "¿Cómo se puede prevenir la aparición de hongos en orquídeas?",
+        "response": "Mejorando la ventilación, evitando el exceso de humedad y utilizando fungicidas preventivos."
+      },
+      {
+        "instruction": "¿Qué es la pseudobulbo en las orquídeas?",
+        "response": "Es una estructura de almacenamiento de agua y nutrientes, común en especies como Cattleya."
+      },
+      {
+        "instruction": "¿Cómo se estimula la floración en orquídeas?",
+        "response": "Reduciendo ligeramente la temperatura nocturna y aplicando fertilizantes con alto contenido de fósforo."
+      },
+      {
+        "instruction": "¿Qué hacer si las hojas de la orquídea se vuelven amarillas?",
+        "response": "Puede ser señal de riego inadecuado, plagas o deficiencias nutricionales; revisar las condiciones de cultivo."
+      },
+      {
+        "instruction": "¿Cómo se realiza el trasplante de una orquídea?",
+        "response": "Se retira con cuidado de su maceta, se podan las raíces dañadas y se coloca en un sustrato fresco."
+      },
+      {
+        "instruction": "¿Qué es un keiki en orquídeas?",
+        "response": "Es un brote lateral que puede desarrollarse en la vara floral, permitiendo la propagación vegetativa."
+      },
+      {
+        "instruction": "¿Cómo se controla la humedad en un invernadero para orquídeas?",
+        "response": "Utilizando sistemas de riego por aspersión, humidificadores y controlando la ventilación."
+      },
+      {
+        "instruction": "¿Qué tipo de maceta es mejor para orquídeas?",
+        "response": "Macetas de plástico o cerámica con orificios de drenaje adecuados para evitar el encharcamiento."
+      },
+      {
+        "instruction": "¿Cómo se puede aumentar la luz en un invernadero para orquídeas?",
+        "response": "Instalando pantallas de sombreo ajustables y utilizando luces artificiales de espectro completo."
+      },
+      {
+        "instruction": "¿Qué es la temperatura crítica para las orquídeas?",
+        "response": "Temperaturas por debajo de 12°C o por encima de 35°C pueden ser perjudiciales para su desarrollo."
+      },
+      {
+        "instruction": "¿Cómo se controla la ventilación en un invernadero para orquídeas?",
+        "response": "Instalando ventiladores y abriendo ventanas para asegurar un flujo de aire constante."
+      },
+      {
+        "instruction": "¿Qué es la poda en orquídeas?",
+        "response": "Consiste en eliminar partes muertas o dañadas de la planta para promover un crecimiento saludable."
+      },
+      {
+        "instruction": "¿Cómo se puede prevenir el estrés térmico en orquídeas?",
+        "response": "Asegurando una temperatura constante y evitando cambios bruscos en el ambiente."
+      },
+      {
+        "instruction": "¿Qué es la aclimatación en orquídeas?",
+        "response": "Es el proceso de adaptar la planta a nuevas condiciones ambientales para evitar el shock."
+      },
+      {
+        "instruction": "¿Cómo se puede mejorar la calidad del agua para regar orquídeas?",
+        "response": "Utilizando agua de lluvia o filtrada, evitando el uso de agua con alto contenido de sales o cloro."
+      },
+      {
+        "instruction": "¿Qué es la fertilización foliar en orquídeas?",
+        "response": "Es la aplicación de nutrientes directamente sobre las hojas para una absorción rápida."
+      },
+      {
+        "instruction": "¿Cómo se puede controlar la temperatura en un invernadero para orquídeas?",
+        "response": "Utilizando sistemas de calefacción y refrigeración, y controlando la exposición al sol."
+      },
+      {
+        "instruction": "¿Qué es la propagación por división en orquídeas?",
+        "response": "Es el proceso de separar una planta en varias partes, cada una con raíces y brotes, para formar nuevas plantas."
+      },
+      {
+        "instruction": "¿Cómo se puede prevenir la aparición de plagas en orquídeas?",
+        "response": "Manteniendo un ambiente limpio, inspeccionando regularmente las plantas y utilizando tratamientos preventivos."
+      },
+      {
+        "instruction": "¿Qué es la desinfección del sustrato en orquídeas?",
+        "response": "Es el proceso de eliminar patógenos del sustrato antes de su uso, generalmente mediante calor."
+      },
+      {
+        "instruction": "¿Cómo se puede mejorar la aireación del sustrato en orquídeas?",
+        "response": "Añadiendo materiales como perlita o corteza de pino al sustrato para mejorar el drenaje."
+      },
+      {
+        "instruction": "¿Qué es el riego por inmersión en orquídeas?",
+        "response": "Consiste en sumergir la maceta en agua durante unos minutos para que el sustrato absorba humedad uniformemente."
+      },
+      {
+        "instruction": "¿Es recomendable usar fungicidas en orquídeas de forma preventiva?",
+        "response": "Sí, especialmente en épocas de alta humedad. Fungicidas naturales como la canela o el cobre son opciones seguras."
+      },
+      {
+        "instruction": "¿Por qué mi orquídea solo da hojas y no flores?",
+        "response": "Probablemente hay exceso de nitrógeno o falta de luz adecuada. Ajusta fertilización y revisa la iluminación."
+      },
+      {
+        "instruction": "¿Cómo se reconocen los síntomas de deshidratación en orquídeas?",
+        "response": "Las hojas aparecen arrugadas y las raíces se ven secas o huecas. Es señal de falta de agua o raíces dañadas."
+      },
+      {
+        "instruction": "¿Qué importancia tiene la circulación del aire para las orquídeas?",
+        "response": "Previene enfermedades fúngicas y permite un secado más rápido del sustrato tras el riego."
+      },
+      {
+        "instruction": "¿Qué tipo de fertilizante se usa durante la floración?",
+        "response": "Fertilizantes ricos en fósforo, como un 10-30-20, ayudan a estimular y mantener la floración."
+      },
+      {
+        "instruction": "¿Cómo saber si una orquídea ha sido regada en exceso?",
+        "response": "Raíces negras, blandas y hojas amarillentas suelen indicar exceso de riego y falta de oxigenación."
+      },
+      {
+        "instruction": "¿Qué hacer con los keikis una vez que tienen raíces?",
+        "response": "Cuando tienen al menos 3 raíces de unos 5 cm, pueden separarse y plantarse individualmente."
+      },
+      {
+        "instruction": "¿Cuándo es mejor abonar las orquídeas?",
+        "response": "Durante su fase de crecimiento activo, normalmente en primavera y verano."
+      },
+      {
+        "instruction": "¿Por qué es importante el drenaje en las macetas de orquídeas?",
+        "response": "Porque evita el encharcamiento, que provoca pudrición radicular y enfermedades."
+      },
+      {
+        "instruction": "¿Qué condiciones de luz necesitan las orquídeas tipo Oncidium?",
+        "response": "Luz brillante pero difusa, evitando la exposición directa al sol del mediodía."
+      },
+      {
+        "instruction": "¿Se pueden usar botellas plásticas como macetas para orquídeas?",
+        "response": "Sí, siempre que tengan buen drenaje y ventilación lateral para las raíces."
+      },
+      {
+        "instruction": "¿Qué significa que una orquídea entre en reposo?",
+        "response": "Reduce su actividad metabólica, detiene el crecimiento y necesita menos riego y fertilización."
+      },
+      {
+        "instruction": "¿Las orquídeas pueden vivir al aire libre todo el año?",
+        "response": "Solo en climas cálidos sin heladas. En otras zonas deben protegerse en interior o invernadero."
+      },
+      {
+        "instruction": "¿Qué especies de orquídeas necesitan reposo seco?",
+        "response": "Dendrobium nobile y Catasetum son ejemplos que requieren reposo seco tras la floración."
+      },
+      {
+        "instruction": "¿Es normal que las raíces de una orquídea se vuelvan verdes tras el riego?",
+        "response": "Sí, es un signo saludable que indica buena hidratación y clorofila activa en las raíces."
+      },
+      {
+        "instruction": "¿Qué hacer si una orquídea pierde hojas desde la base?",
+        "response": "Puede ser normal en algunas especies, pero si es excesivo, revisar por pudrición o plagas."
+      },
+      {
+        "instruction": "¿Por qué se deben evitar los platos bajo las macetas de orquídeas?",
+        "response": "Pueden acumular agua y provocar pudrición radicular si no se vacían correctamente."
+      },
+      {
+        "instruction": "¿Qué hacer si una orquídea tiene moho en la superficie del sustrato?",
+        "response": "Retirar la capa afectada, mejorar ventilación y reducir la frecuencia de riego."
+      },
+      {
+        "instruction": "¿Cuál es la función de los pseudobulbos en las orquídeas?",
+        "response": "Almacenan agua y nutrientes, permitiendo a la planta resistir períodos secos."
+      },
+      {
+        "instruction": "¿Qué hacer si una orquídea sufre un golpe de calor?",
+        "response": "Llevarla a un lugar sombreado, hidratar moderadamente y evitar fertilizar durante unos días."
+      },
+      {
+        "instruction": "¿Cómo afecta el cambio de estación a las orquídeas tropicales?",
+        "response": "Altera temperatura, luz y humedad, lo que puede afectar su crecimiento y floración si no se ajustan las condiciones."
+      },
+      {
+        "instruction": "¿Es recomendable mezclar especies distintas de orquídeas en una misma maceta?",
+        "response": "No, cada especie tiene necesidades específicas de riego, luz y crecimiento."
+      },
+      {
+        "instruction": "¿Qué hacer si una orquídea recién comprada pierde sus flores?",
+        "response": "Es común por el cambio de ambiente. Asegura condiciones estables y pronto se recuperará."
+      },
+      {
+        "instruction": "¿Cuánto puede tardar una orquídea en adaptarse a un nuevo invernadero?",
+        "response": "Entre 2 y 4 semanas, dependiendo de la especie y el cambio de condiciones ambientales."
+      },
+      {
+        "instruction": "¿Se puede regar una orquídea con agua de acuario?",
+        "response": "Sí, si el acuario es saludable, el agua contiene nutrientes beneficiosos en baja concentración."
+      },
+      {
+        "instruction": "¿Cómo afecta la contaminación del aire a las orquídeas en invernadero?",
+        "response": "El polvo y contaminantes pueden obstruir estomas y afectar la fotosíntesis. Se recomienda buena ventilación."
+      },
+      {
+        "instruction": "¿Qué es un invernadero de doble capa?",
+        "response": "Es un tipo de invernadero con dos capas de plástico o vidrio para mejorar el aislamiento térmico."
+      },
+      {
+        "instruction": "¿Cuál es el mejor momento para dividir una orquídea?",
+        "response": "Justo después de la floración, cuando inicia un nuevo ciclo de crecimiento."
+      },
+      {
+        "instruction": "¿Qué tipo de ventilación es mejor para orquídeas en clima cálido?",
+        "response": "Ventilación cruzada natural combinada con ventiladores si es necesario."
+      },
+      {
+        "instruction": "¿Qué hongos pueden afectar las raíces de las orquídeas?",
+        "response": "Rhizoctonia, Fusarium y Phytophthora son algunos de los más comunes."
+      },
+      {
+        "instruction": "¿Cómo evitar que las orquídeas se estresen por trasplante?",
+        "response": "Realizarlo con cuidado, evitar dañar raíces y mantener condiciones estables tras el trasplante."
+      },
+      {
+        "instruction": "¿Qué significa que una orquídea esté en estado latente?",
+        "response": "Está viva pero sin crecimiento activo. Es normal en algunas especies durante el invierno o estación seca."
+      },
+      {
+        "instruction": "¿Qué función tienen los estomas en las hojas de orquídeas?",
+        "response": "Regulan el intercambio de gases y la transpiración. Son esenciales para la fotosíntesis."
+      },
+      {
+        "instruction": "¿Se puede utilizar turba como sustrato en orquídeas?",
+        "response": "Solo en pequeñas cantidades y para especies terrestres. Puede retener demasiada agua para epífitas."
+      },
+      {
+        "instruction": "¿Qué tan profundo debe plantarse una orquídea?",
+        "response": "Lo justo para que las raíces queden cubiertas pero el cuello de la planta quede libre para evitar pudrición."
+      },
+      {
+        "instruction": "¿Qué materiales naturales se usan como sustrato alternativo?",
+        "response": "Cáscara de coco, carbón vegetal, corcho, musgo sphagnum, piedra volcánica y fibra de helecho."
+      },
+      {
+        "instruction": "¿Cuál es la mejor forma de etiquetar orquídeas en un invernadero?",
+        "response": "Etiquetas plásticas resistentes al agua con nombre, fecha de adquisición y floración."
+      },
+      {
+        "instruction": "¿Por qué es útil llevar un registro de floración?",
+        "response": "Permite identificar patrones, saber cuándo aplicar fertilizantes y detectar anomalías en el ciclo."
+      }
+  ]
+  

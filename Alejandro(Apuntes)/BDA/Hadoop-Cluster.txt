@@ -1,0 +1,72 @@
+Anotar:
+
+   module load openstack
+   source /opt/cesga/openstack/osc.bash_completion
+
+------
+   source ./openstack.sh
+   openstack server list
+   
+openstack keypair create --public-key ~/.ssh/id_rsa.pub xuedua095-hadoop
+
+openstack server create --boot-from-volume 80 --image baseos-Rocky-8.7-v4
+ --flavor a1.4c8m --key-name xueuda095-hadoop --network provnet-formacion-vlan-133
+ --security-group wirtz-ssh xuedua095-WIRTZ_EIAB1-Alejandro-Hadoop
+
+openstack server list|grep xuedua095
+
+openstack security group create xuedua095
+
+openstack security group rule list xuedua095
+
+openstack security group rule create --proto tcp --dst-port 22 --ingress --remote-ip 0.0.0.0/0 sg-wirtz-xuedua095
+
+--> Añadir reglas en nova
+
+
+for numero in {1..4..1}; do \
+   openstack server create --boot-from-volume 80 --image baseos-Rocky-8.7-v4 \
+ --flavor a1.4c8m --key-name xuedua095-hadoop --network provnet-formacion-vlan-133 \
+ --security-group sg-wirtz-xuedua095 xuedua095-WIRTZ_EIAB1-Alejandro-Hadoop${numero}; done
+
+
+sudo dnf update -y
+
+nano /etc/hosts
+
+10.133.28.20 hadoop1
+10.133.29.51 hadoop2
+10.133.28.133 hadoop3
+10.133.29.146 hadoop4
+
+sudo yum --enablerepo=extras -y install epel-release
+
+sudo yum install -y clustershell
+
+for servidor in $(cat /etc/hosts|grep hadoop); do \
+ssh-keyscan -H $servidor; done >> /home/cesgaxuser/.ssh/known_hosts
+
+scp .ssh/id_rsa cesgaxuser@10.133.28.173:/home/cesgaxuser/.ssh/
+
+clush -l cesgaxuser -bw hadoop[2-4] --copy /home/cesgaxuser/.ssh --dest /home/cesgaxuser/
+
+clush -l cesgaxuser -bw hadoop[1-4] sudo dnf update -y
+
+clush -l cesgaxuser -bw hadoop[1-4] --copy \
+/home/cesgaxuser/hadoop-3.2.4/etc/hadoop/hadoop-env.sh --dest \
+/home/cesgaxuser/hadoop-3.2.4/etc/hadoop/hadoop-env.sh
+
+
+curl https://dlcdn.apache.org/hadoop/common/hadoop-3.2.4/hadoop-3.2.4.tar.gz \
+  --output hadoop-3.2.4.tar.gz
+
+
+Mostrar informacion de un Sistema Operativo
+openstack image show 
+
+clush -l cesgaxuser -bw hadoop[1-4] tar -xzf hadoop-3.2.4.tar.gz
+
+
+spark-submit --deploy-mode client \
+  --class org.apache.spark.examples.SparkPi \
+  $SPARK_HOME/examples/jars/spark-examples_2.12-3.5.5.jar 2

@@ -1,0 +1,224 @@
+sc = SparkContext.getOrCreate()
+
+rdd = sc.textFile("/user/alumno/taxi/yellow_tripdata_2018-11.csv")
+header = rdd.first()
+rdd_clean = rdd.filter(lambda line: line != header).map(lambda line: line.split(","))
+
+-------------
+
+rdd_clean = rdd_clean.filter(lambda x: len(x) == 18)
+
+------
+
+from datetime import datetime
+
+def in_midnight_hour(row):
+    try:
+        pickup = datetime.strptime(row[1], "%Y-%m-%d %H:%M:%S")
+        return pickup.hour == 0
+    except:
+        return False
+
+rdd_A = rdd_clean.filter(in_midnight_hour) \
+    .map(lambda row: (row[1][:10], 1)) \
+    .reduceByKey(lambda a, b: a + b)
+
+print(rdd_A.collect())
+
+-------------
+
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import hour, to_date
+
+spark = SparkSession.builder.getOrCreate()
+
+df = spark.read.csv("/user/alumno/taxi/yellow_tripdata_2018-11.csv", header=True, inferSchema=True)
+df_A = df.filter(hour("tpep_pickup_datetime") == 0).groupBy(to_date("tpep_pickup_datetime").alias("day")).count()
+df_A.show()
+
+-------
+
+df.createOrReplaceTempView("trips")
+
+spark.sql("""
+    SELECT DATE(tpep_pickup_datetime) as day, COUNT(*) as total
+    FROM trips
+    WHERE HOUR(tpep_pickup_datetime) = 0
+    GROUP BY day
+    ORDER BY day
+""").show()
+
+------------
+
+def get_month(row):
+    try:
+        pickup = datetime.strptime(row[1], "%Y-%m-%d %H:%M:%S")
+        if pickup.hour == 0:
+            return (pickup.strftime("%Y-%m"), 1)
+        else:
+            return None
+    except:
+        return None
+
+rdd_B = rdd_clean.map(get_month).filter(lambda x: x is not None).reduceByKey(lambda a, b: a + b)
+print(rdd_B.collect())
+
+--------------------
+
+from pyspark.sql.functions import date_format
+
+df_B = df.filter(hour("tpep_pickup_datetime") == 0) \
+         .groupBy(date_format("tpep_pickup_datetime", "yyyy-MM").alias("month")).count()
+df_B.show()
+
+------------------------
+
+spark.sql("""
+    SELECT date_format(tpep_pickup_datetime, 'yyyy-MM') as month, COUNT(*) as total
+    FROM trips
+    WHERE HOUR(tpep_pickup_datetime) = 0
+    GROUP BY month
+    ORDER BY month
+""").show()
+
+--------------
+
+rdd_C = rdd_clean.map(lambda row: ((row[0], row[1][:7]), 1)) \
+                 .reduceByKey(lambda a, b: a + b) \
+                 .map(lambda x: (x[0][0], (x[1], 1))) \
+                 .reduceByKey(lambda a, b: (a[0]+b[0], a[1]+b[1])) \
+                 .mapValues(lambda x: x[0]/x[1])
+print(rdd_C.collect())
+
+-------------------
+
+df_C = df.withColumn("month", date_format("tpep_pickup_datetime", "yyyy-MM")) \
+         .groupBy("VendorID", "month").count() \
+         .groupBy("VendorID").avg("count")
+df_C.show()
+
+------------------
+
+spark.sql("""
+    WITH monthly_counts AS (
+        SELECT VendorID, date_format(tpep_pickup_datetime, 'yyyy-MM') as month, COUNT(*) as trip_count
+        FROM trips
+        GROUP BY VendorID, month
+    )
+    SELECT VendorID, AVG(trip_count) as avg_trips_per_month
+    FROM monthly_counts
+    GROUP BY VendorID
+""").show()
+
+------------------
+
+rdd_D = rdd_clean.map(lambda row: ((row[0], row[1][:10]), 1)) \
+                 .reduceByKey(lambda a, b: a + b) \
+                 .map(lambda x: (x[0][0], (x[1], 1))) \
+                 .reduceByKey(lambda a, b: (a[0] + b[0], a[1] + b[1])) \
+                 .mapValues(lambda x: x[0] / x[1])
+print(rdd_D.collect())
+
+---------------------
+
+from pyspark.sql.functions import to_date
+
+df_D = df.withColumn("day", to_date("tpep_pickup_datetime")) \
+         .groupBy("VendorID", "day").count() \
+         .groupBy("VendorID").avg("count")
+df_D.show()
+
+----------------------
+
+spark.sql("""
+    WITH daily_counts AS (
+        SELECT VendorID, DATE(tpep_pickup_datetime) as day, COUNT(*) as trip_count
+        FROM trips
+        GROUP BY VendorID, day
+    )
+    SELECT VendorID, AVG(trip_count) as avg_trips_per_day
+    FROM daily_counts
+    GROUP BY VendorID
+""").show()
+
+-----------------------
+
+def is_first_week(row):
+    try:
+        pickup = datetime.strptime(row[1], "%Y-%m-%d %H:%M:%S")
+        return pickup.day <= 7
+    except:
+        return False
+
+rdd_E = rdd_clean.filter(is_first_week).map(lambda x: int(x[3])).max()
+print(f"Máximo número de pasaxeiros na primeira semana: {rdd_E}")
+
+---------------------
+
+from pyspark.sql.functions import dayofmonth
+
+df_E = df.filter(dayofmonth("tpep_pickup_datetime") <= 7)
+df_E.select("passenger_count").agg({"passenger_count": "max"}).show()
+
+------------------
+
+spark.sql("""
+    SELECT MAX(passenger_count) as max_passengers
+    FROM trips
+    WHERE DAY(tpep_pickup_datetime) <= 7
+""").show()
+
+---------------
+
+rdd_F = rdd_clean.map(lambda x: int(x[3])).max()
+print(f"Máximo número de pasaxeiros no mes: {rdd_F}")
+
+-------------
+
+df_F = df.select("passenger_count").agg({"passenger_count": "max"})
+df_F.show()
+
+---------------
+
+spark.sql("""
+    SELECT MAX(passenger_count) as max_passengers
+    FROM trips
+""").show()
+
+----------------
+
+rdd_G = rdd_clean.map(lambda x: float(x[16])).max()
+print(f"Percorrido máis caro: {rdd_G}")
+
+----------------
+
+df.select("total_amount").agg({"total_amount": "max"}).show()
+
+-------------------
+
+spark.sql("""
+    SELECT MAX(total_amount) as max_cost
+    FROM trips
+""").show()
+
+----------------
+
+rdd_H = rdd_clean.map(lambda x: float(x[16])).filter(lambda x: x > 0).min()
+print(f"Percorrido máis barato (sen valores 0): {rdd_H}")
+
+-----------------
+
+df.filter("total_amount > 0").select("total_amount").agg({"total_amount": "min"}).show()
+
+-------------------
+
+spark.sql("""
+    SELECT MIN(total_amount) as min_cost
+    FROM trips
+    WHERE total_amount > 0
+""").show()
+
+--------------------
+
+
+

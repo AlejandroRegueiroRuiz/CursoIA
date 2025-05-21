@@ -4,3 +4,7 @@ Como instalar miniconda:
     linux:
         wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
         bash ~/Miniconda3-latest-Linux-x86_64.sh
+
+
+
+curl -X POST -H "Content-Type: application/xml" -d C:\Users\alejandro.regueiroru\Desktop\CosasAlex\Nifi\archivo.xml http://localhost:8443/nifi-api/process-groups/95544765-0195-1000-9ffc-0287a569a96f/template-instance

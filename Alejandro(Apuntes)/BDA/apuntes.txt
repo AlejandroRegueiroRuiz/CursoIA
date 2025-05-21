@@ -1,3 +1,7 @@
+Nifi Token:
+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
+
+
 docker run --name nifi \
   -p 8443:8443 \
   -d \
@@ -5,3 +9,59 @@ docker run --name nifi \
   -e SINGLE_USER_CREDENTIALS_USERNAME=admin \
   -e SINGLE_USER_CREDENTIALS_PASSWORD=EsteEunContrasinalMoiLongo1234567890 \
   apache/nifi:latest
+
+
+  com.mysql.cj.jdbc.Driver
+
+IPS
+193.144.34.0/24
+195.57.104.0/24
+
+
+x09HIkuCR8p/n64J1tAWbQ3F2DpL1JJf
+
+create user 'nifi'@'%' identified by 'Nifi.Abc123';
+
+grant all privileges on nifi.* to 'nifi'@'%';
+
+flush privileges;
+
+use nifi;
+
+create table trono(
+id integer primary key, firstName varchar(100),
+lastName varchar(100), fullName varchar(100),
+title varchar(100), family varchar(100),
+image varchar(255), imageUrl varchar(255)
+);
+
+docker run -d  --name kafkiano -p 9092:9092 -p 9093:9093 -e KAFKA_NODE_ID=1 -e KAFKA_PROCESS_ROLES=broker,controller -e KAFKA_LISTENERS=PLAINTEXT://:9092,CONTROLLER://:9093 -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://cuatro.kafka.jfsanchez.es:9092 -e KAFKA_CONTROLLER_LISTENER_NAMES=CONTROLLER -e KAFKA_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT -e KAFKA_CONTROLLER_QUORUM_VOTERS=1@cuatro.kafka.jfsanchez.es:9093 -e KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1 -e KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR=1 -e KAFKA_TRANSACTION_STATE_LOG_MIN_ISR=1 -e KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS=0 -e KAFKA_NUM_PARTITIONS=3 --restart unless-stopped apache/kafka:latest
+
+docker run -d  \
+  --name kafkiano \
+  -p 9092:9092 -p 9093:9093 \
+  -e KAFKA_NODE_ID=1 \
+  -e KAFKA_PROCESS_ROLES=broker,controller \
+  -e KAFKA_LISTENERS=PLAINTEXT://:9092,CONTROLLER://:9093 \
+  -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://cuatro.kafka.jfsanchez.es:9092 \
+  -e KAFKA_CONTROLLER_LISTENER_NAMES=CONTROLLER \
+  -e KAFKA_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT \
+  -e KAFKA_CONTROLLER_QUORUM_VOTERS=1@cuatro.kafka.jfsanchez.es:9093 \
+  -e KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1 \
+  -e KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR=1 \
+  -e KAFKA_TRANSACTION_STATE_LOG_MIN_ISR=1 \
+  -e KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS=0 \
+  -e KAFKA_NUM_PARTITIONS=3 \
+  --restart unless-stopped \
+  apache/kafka:latest
+
+
+
+Código,Nome,Enderezo,Concello,Provincia,Cód. postal,Teléfono,Tipo de centro,COORDENADA_X,COORDENADA_Y,TITULARIDADE,ENSINO_CONCERTADO,DEPENDENTE
+
+  36000031,CEIP Antonio Carpintero,"Rúa Miguel Davila, s/n (Consistorio)",Arbo,Pontevedra,36430,886110092,CEIP,42.1129989624023,-8.31356048583984,Pública,Non,Si
+
+
+CONCELLO,PROVINCIA,ENDEREZO,CODIGO_POSTAL,TELEFONO,FAX,CORREO ELECTRONICO,PORTAL_WEB,LATITUD,LONGITUD
+
+  Vilanova de Arousa,Pontevedra,Praza do Concello num. 1,36620,986554021,986554069,rexistro.xeral@vilanovadearousa.gal,http://www.vilanovadearousa.com,42.56202,-8.82668

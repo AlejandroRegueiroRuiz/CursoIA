@@ -1,0 +1,37 @@
+CENTRO='wirtz'
+USUARIO='xuedua095'
+SABOR="a1.4c8m"
+REDE='provnet-formacion-vlan-133'
+
+module load openstack
+source /opt/cesga/openstack/osc.bash_completion
+source ./openstack.sh
+
+# 1) Crear llave de forma no interactiva
+   ssh-keygen -t rsa -q -f "${HOME}/.ssh/id_rsa" -N ""
+
+# 2) Borrar llave del OpenStack por si existe
+   openstack keypair delete kp-${CENTRO}-${USUARIO}
+
+# 3) Crear y Asociar llave ssh
+   openstack keypair create --public-key ~/.ssh/id_rsa.pub kp-${CENTRO}-${USUARIO}
+
+# 4) Borrar grupo de seguridad
+  openstack security group delete sg-${CENTRO}-${USUARIO}
+
+# 5) Crear grupo de seguridad
+   openstack security group create sg-${CENTRO}-${USUARIO}
+   openstack security group rule create --proto tcp --dst-port 22 --ingress --remote-ip 0.0.0.0/0 sg-${CENTRO}-${USUARIO}
+   openstack security group rule list sg-${CENTRO}-${USUARIO}
+
+
+# 6) Crear Instancia
+   for num in {1..4..1}; do \
+      openstack server create \
+         --flavor ${SABOR} \
+         --boot-from-volume 80 \
+         --image baseos-Rocky-8.7-v4 \
+         --security-group sg-${CENTRO}-${USUARIO} \
+         --key-name kp-${CENTRO}-${USUARIO} \
+         --network ${REDE} \
+         ${CENTRO}-${USUARIO}-hadoop${num}; done
